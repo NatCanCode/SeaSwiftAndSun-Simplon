@@ -76,18 +76,11 @@ struct WaveSafariWidgetEntryView : View {
                 .fontWeight(.bold)
                 .padding(.top, -4)
             }
-//            .background(
-//                    Circle()
-//                        .fill(.red)
-//                        .frame(width: 130, height: 130)
-//                )
             .background(
                 // ToDo: Update with spot picture
                 Image(config.picture)
                         .resizable()
                         .scaledToFill()
-//                        .frame(height: .infinity)
-//                        .padding(.horizontal, -16)
                         .padding(.vertical, -24)
                 )
             .padding()

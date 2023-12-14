@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DayConfig {
     let backgroundColor: Color
-//    let quote: String
     let picture: String
     let location: String
 
@@ -68,11 +67,3 @@ struct DayConfig {
         }
     }
 }
-
-//#Preview {
-//    DayConfig(
-//        backgroundColor: .teal,
-//        picture: "TheBubble",
-//        location: "The Bubble"
-//    )
-//}
