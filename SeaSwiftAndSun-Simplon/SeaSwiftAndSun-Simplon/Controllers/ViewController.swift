@@ -119,6 +119,13 @@ class ViewController: UIViewController {
     private func handleError(_ error: Error) {
         print(error)
     }
+    @IBAction func goToAddView(_ sender: Any) {
+        let swiftUIView = AddSurfSpotView()
+                let hostingController = UIHostingController(rootView: swiftUIView)
+
+                // Présentez le hostingController
+                self.present(hostingController, animated: true, completion: nil)
+    }
 }
 
 //MARK: Handle Data source and delegate of tableview
