@@ -23,20 +23,20 @@ struct SurfSpotRecord: Codable {
 }
 
 struct SurfSpotFields: Codable, Hashable {
-	let id = UUID()
-	let peakSurfSeasonBegins: String
-	let destinationStateCountry: String
-	let peakSurfSeasonEnds: String
-	let influencers: [String]?
-	let surfBreak: [String]?
-	let magicSeaweedLink: String?
-	let photos: [Photo]?
-	let difficultyLevel: Int
-	let destination: String
-	let travellers: [String]?
-	let coordinates: String?
+	var id = UUID()
+	var peakSurfSeasonBegins: String
+	var destinationStateCountry: String
+	var peakSurfSeasonEnds: String
+	var influencers: [String]?
+	var surfBreak: [String]?
+	var magicSeaweedLink: String?
+	var photos: [Photo]?
+	var difficultyLevel: Int
+	var destination: String
+	var travellers: [String]?
+	var coordinates: String?
 	var parsedCoor: CLLocationCoordinate2D?
-	let address: String?
+	var address: String?
 	
 	enum CodingKeys: String, CodingKey {
 		case peakSurfSeasonBegins = "Peak Surf Season Begins"

@@ -22,6 +22,11 @@
 		C89672402B276B98004D489C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896723F2B276B98004D489C /* NetworkManager.swift */; };
 		C89672442B29BCC3004D489C /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672432B29BCC3004D489C /* FinalView.swift */; };
 		C89672462B29BCC8004D489C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672452B29BCC8004D489C /* MapView.swift */; };
+		F21D895C2B2C66DC004B0460 /* AddSurfSpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D895B2B2C66DC004B0460 /* AddSurfSpotViewModel.swift */; };
+		F21D895E2B2C67FF004B0460 /* AddSurfSpotForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D895D2B2C67FF004B0460 /* AddSurfSpotForm.swift */; };
+		F21D89602B2C6824004B0460 /* AddSurfSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D895F2B2C6824004B0460 /* AddSurfSpotView.swift */; };
+		F21D89622B2C6854004B0460 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D89612B2C6854004B0460 /* CameraView.swift */; };
+		F21D89642B2C6892004B0460 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D89632B2C6892004B0460 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		C896723F2B276B98004D489C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C89672432B29BCC3004D489C /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		C89672452B29BCC8004D489C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F21D895B2B2C66DC004B0460 /* AddSurfSpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSurfSpotViewModel.swift; sourceTree = "<group>"; };
+		F21D895D2B2C67FF004B0460 /* AddSurfSpotForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSurfSpotForm.swift; sourceTree = "<group>"; };
+		F21D895F2B2C6824004B0460 /* AddSurfSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSurfSpotView.swift; sourceTree = "<group>"; };
+		F21D89612B2C6854004B0460 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		F21D89632B2C6892004B0460 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 		4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */ = {
 			isa = PBXGroup;
 			children = (
+				F21D895A2B2C6677004B0460 /* ViewModels */,
 				C896723B2B276AE0004D489C /* Model */,
 				4201DA852B1F756D002A203E /* Views */,
 				4201DA842B1F7561002A203E /* Controllers */,
@@ -107,6 +118,10 @@
 				C89672452B29BCC8004D489C /* MapView.swift */,
 				C8733F802B2B08690075DFC6 /* SelectedSpotMapInfoView.swift */,
 				C89151482B2B3ED200BAA33F /* DetailsView.swift */,
+				F21D895D2B2C67FF004B0460 /* AddSurfSpotForm.swift */,
+				F21D895F2B2C6824004B0460 /* AddSurfSpotView.swift */,
+				F21D89612B2C6854004B0460 /* CameraView.swift */,
+				F21D89632B2C6892004B0460 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +140,14 @@
 				C896723C2B276AF6004D489C /* AirtableData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F21D895A2B2C6677004B0460 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F21D895B2B2C66DC004B0460 /* AddSurfSpotViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,15 +221,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D895E2B2C67FF004B0460 /* AddSurfSpotForm.swift in Sources */,
 				C8733F812B2B08690075DFC6 /* SelectedSpotMapInfoView.swift in Sources */,
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
+				F21D89622B2C6854004B0460 /* CameraView.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
+				F21D89602B2C6824004B0460 /* AddSurfSpotView.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
 				C89672402B276B98004D489C /* NetworkManager.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				C89151492B2B3ED200BAA33F /* DetailsView.swift in Sources */,
 				C896723D2B276AF6004D489C /* AirtableData.swift in Sources */,
+				F21D895C2B2C66DC004B0460 /* AddSurfSpotViewModel.swift in Sources */,
 				C89672442B29BCC3004D489C /* FinalView.swift in Sources */,
+				F21D89642B2C6892004B0460 /* ImagePicker.swift in Sources */,
 				C89672462B29BCC8004D489C /* MapView.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
 			);
@@ -360,7 +388,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = CDT2LZXUGZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -390,7 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = CDT2LZXUGZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
