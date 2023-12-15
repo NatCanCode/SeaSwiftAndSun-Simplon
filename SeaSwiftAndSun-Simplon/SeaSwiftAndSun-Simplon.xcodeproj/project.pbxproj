@@ -15,6 +15,15 @@
 		4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201DA792B1F686E002A203E /* LaunchScreen.storyboard */; };
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
+		AC5520562B2C5980003191F3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5520552B2C5980003191F3 /* WidgetKit.framework */; };
+		AC5520582B2C5980003191F3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5520572B2C5980003191F3 /* SwiftUI.framework */; };
+		AC55205B2B2C5980003191F3 /* WaveSafariWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55205A2B2C5980003191F3 /* WaveSafariWidgetBundle.swift */; };
+		AC55205D2B2C5980003191F3 /* WaveSafariWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55205C2B2C5980003191F3 /* WaveSafariWidgetLiveActivity.swift */; };
+		AC55205F2B2C5980003191F3 /* WaveSafariWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55205E2B2C5980003191F3 /* WaveSafariWidget.swift */; };
+		AC5520612B2C5980003191F3 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5520602B2C5980003191F3 /* AppIntent.swift */; };
+		AC5520632B2C5982003191F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5520622B2C5982003191F3 /* Assets.xcassets */; };
+		AC5520672B2C5982003191F3 /* WaveSafariWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AC5520542B2C5980003191F3 /* WaveSafariWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC55206D2B2C5B3F003191F3 /* DayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55206C2B2C5B3F003191F3 /* DayConfig.swift */; };
 		C8733F812B2B08690075DFC6 /* SelectedSpotMapInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8733F802B2B08690075DFC6 /* SelectedSpotMapInfoView.swift */; };
 		C89151492B2B3ED200BAA33F /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89151482B2B3ED200BAA33F /* DetailsView.swift */; };
 		C891514C2B2B636C00BAA33F /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C891514B2B2B636C00BAA33F /* WeatherKit.framework */; };
@@ -23,6 +32,30 @@
 		C89672442B29BCC3004D489C /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672432B29BCC3004D489C /* FinalView.swift */; };
 		C89672462B29BCC8004D489C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672452B29BCC8004D489C /* MapView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC5520652B2C5982003191F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4201DA632B1F686B002A203E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5520532B2C5980003191F3;
+			remoteInfo = WaveSafariWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC5520682B2C5982003191F3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC5520672B2C5982003191F3 /* WaveSafariWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4201DA6B2B1F686B002A203E /* Wave Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +68,16 @@
 		4201DA7C2B1F686E002A203E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
+		AC5520542B2C5980003191F3 /* WaveSafariWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WaveSafariWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5520552B2C5980003191F3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AC5520572B2C5980003191F3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		AC55205A2B2C5980003191F3 /* WaveSafariWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveSafariWidgetBundle.swift; sourceTree = "<group>"; };
+		AC55205C2B2C5980003191F3 /* WaveSafariWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveSafariWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		AC55205E2B2C5980003191F3 /* WaveSafariWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveSafariWidget.swift; sourceTree = "<group>"; };
+		AC5520602B2C5980003191F3 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		AC5520622B2C5982003191F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC5520642B2C5982003191F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC55206C2B2C5B3F003191F3 /* DayConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayConfig.swift; sourceTree = "<group>"; };
 		C8733F802B2B08690075DFC6 /* SelectedSpotMapInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSpotMapInfoView.swift; sourceTree = "<group>"; };
 		C89151482B2B3ED200BAA33F /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		C891514B2B2B636C00BAA33F /* WeatherKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WeatherKit.framework; path = System/Library/Frameworks/WeatherKit.framework; sourceTree = SDKROOT; };
@@ -53,6 +96,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC5520512B2C5980003191F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5520582B2C5980003191F3 /* SwiftUI.framework in Frameworks */,
+				AC5520562B2C5980003191F3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				AC5520592B2C5980003191F3 /* WaveSafariWidget */,
 				4201DA6C2B1F686B002A203E /* Products */,
 				C891514A2B2B636800BAA33F /* Frameworks */,
 			);
@@ -69,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				4201DA6B2B1F686B002A203E /* Wave Safari.app */,
+				AC5520542B2C5980003191F3 /* WaveSafariWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,10 +165,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AC5520592B2C5980003191F3 /* WaveSafariWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AC55205A2B2C5980003191F3 /* WaveSafariWidgetBundle.swift */,
+				AC55205C2B2C5980003191F3 /* WaveSafariWidgetLiveActivity.swift */,
+				AC55205E2B2C5980003191F3 /* WaveSafariWidget.swift */,
+				AC55206C2B2C5B3F003191F3 /* DayConfig.swift */,
+				AC5520602B2C5980003191F3 /* AppIntent.swift */,
+				AC5520622B2C5982003191F3 /* Assets.xcassets */,
+				AC5520642B2C5982003191F3 /* Info.plist */,
+			);
+			path = WaveSafariWidget;
+			sourceTree = "<group>";
+		};
 		C891514A2B2B636800BAA33F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C891514B2B2B636C00BAA33F /* WeatherKit.framework */,
+				AC5520552B2C5980003191F3 /* WidgetKit.framework */,
+				AC5520572B2C5980003191F3 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,15 +207,34 @@
 				4201DA672B1F686B002A203E /* Sources */,
 				4201DA682B1F686B002A203E /* Frameworks */,
 				4201DA692B1F686B002A203E /* Resources */,
+				AC5520682B2C5982003191F3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AC5520662B2C5982003191F3 /* PBXTargetDependency */,
 			);
 			name = "SeaSwiftAndSun-Simplon";
 			productName = "SeaSwiftAndSun-Simplon";
 			productReference = 4201DA6B2B1F686B002A203E /* Wave Safari.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AC5520532B2C5980003191F3 /* WaveSafariWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC55206B2B2C5982003191F3 /* Build configuration list for PBXNativeTarget "WaveSafariWidgetExtension" */;
+			buildPhases = (
+				AC5520502B2C5980003191F3 /* Sources */,
+				AC5520512B2C5980003191F3 /* Frameworks */,
+				AC5520522B2C5980003191F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveSafariWidgetExtension;
+			productName = WaveSafariWidgetExtension;
+			productReference = AC5520542B2C5980003191F3 /* WaveSafariWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -154,11 +243,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					4201DA6A2B1F686B002A203E = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					AC5520532B2C5980003191F3 = {
+						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
@@ -176,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				AC5520532B2C5980003191F3 /* WaveSafariWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +281,14 @@
 				4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */,
 				4201DA782B1F686E002A203E /* Assets.xcassets in Resources */,
 				4201DA762B1F686B002A203E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5520522B2C5980003191F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5520632B2C5982003191F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +313,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC5520502B2C5980003191F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC55205B2B2C5980003191F3 /* WaveSafariWidgetBundle.swift in Sources */,
+				AC5520612B2C5980003191F3 /* AppIntent.swift in Sources */,
+				AC55206D2B2C5B3F003191F3 /* DayConfig.swift in Sources */,
+				AC55205D2B2C5980003191F3 /* WaveSafariWidgetLiveActivity.swift in Sources */,
+				AC55205F2B2C5980003191F3 /* WaveSafariWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC5520662B2C5982003191F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5520532B2C5980003191F3 /* WaveSafariWidgetExtension */;
+			targetProxy = AC5520652B2C5982003191F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4201DA742B1F686B002A203E /* Main.storyboard */ = {
@@ -356,11 +477,12 @@
 		4201DA802B1F686E002A203E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = 3WL53CAG23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -386,11 +508,12 @@
 		4201DA812B1F686E002A203E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = 3WL53CAG23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -413,6 +536,60 @@
 			};
 			name = Release;
 		};
+		AC5520692B2C5982003191F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WL53CAG23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaveSafariWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WaveSafariWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amandinecousin.SeaSwiftAndSun-Simplon.WaveSafariWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC55206A2B2C5982003191F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WL53CAG23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaveSafariWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WaveSafariWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amandinecousin.SeaSwiftAndSun-Simplon.WaveSafariWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,6 +607,15 @@
 			buildConfigurations = (
 				4201DA802B1F686E002A203E /* Debug */,
 				4201DA812B1F686E002A203E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC55206B2B2C5982003191F3 /* Build configuration list for PBXNativeTarget "WaveSafariWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5520692B2C5982003191F3 /* Debug */,
+				AC55206A2B2C5982003191F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
