@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddSurfSpotView: View {
+    @Environment(\.dismiss) var dismiss
     
     // MARK: - Injected properties
     @StateObject var viewModel = AddSurfSpotViewModel()
@@ -23,6 +24,7 @@ struct AddSurfSpotView: View {
             
             Button {
                 viewModel.postData()
+                dismiss()
             } label: {
                 Text("Add")
                     .foregroundColor(.white)
